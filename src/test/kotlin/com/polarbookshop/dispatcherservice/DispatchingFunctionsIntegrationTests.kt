@@ -13,22 +13,6 @@ import java.util.function.Function
 class DispatchingFunctionsIntegrationTests {
     @Autowired
     private lateinit var catalog : FunctionCatalog
-//    private val objectMapper = jacksonObjectMapper()
-
-//    @Test
-//    fun packAndLabelOrder() {
-//        val packAndLabel = catalog.lookup<Function<OrderAcceptedMessage, Flux<Message<*>>>>("pack|label")
-//
-//        val orderId = 121L
-//        val orderAcceptedMessage = OrderAcceptedMessage(orderId)
-//
-//        StepVerifier.create(packAndLabel.apply(orderAcceptedMessage))
-//            .expectNextMatches { message ->
-//                val dispatchedOrder = objectMapper.readValue(message.payload as ByteArray, OrderDispatchedMessage::class.java)
-//                dispatchedOrder.orderId == orderId
-//            }
-//            .verifyComplete()
-//    }
 
     @Test
     fun packAndLabelForJava(){
