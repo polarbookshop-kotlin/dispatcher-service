@@ -41,8 +41,8 @@ dependencies {
 //	implementation("org.springframework.cloud:spring-cloud-function-kotlin")
 
 	// Jackson for JSON serialization/deserialization
-	implementation("com.fasterxml.jackson.core:jackson-databind")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+//	implementation("com.fasterxml.jackson.core:jackson-databind")
+//	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 }
 
 dependencyManagement {
