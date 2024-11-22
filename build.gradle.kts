@@ -31,6 +31,18 @@ dependencies {
 	testImplementation("org.springframework.amqp:spring-rabbit-test")
 	testImplementation("org.springframework.cloud:spring-cloud-stream-test-binder")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+	testImplementation("io.projectreactor:reactor-test")
+
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-function-kotlin
+//	implementation("org.springframework.cloud:spring-cloud-function-kotlin:4.0.1")
+
+//	implementation("org.springframework.cloud:spring-cloud-function-web")
+//	implementation("org.springframework.cloud:spring-cloud-function-kotlin")
+
+	// Jackson for JSON serialization/deserialization
+	implementation("com.fasterxml.jackson.core:jackson-databind")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 }
 
 dependencyManagement {
